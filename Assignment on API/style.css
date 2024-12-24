@@ -1,0 +1,58 @@
+body {
+  background-image: url('sky photo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: nowrap; 
+  align-items: flex-start;
+  gap: 20px; 
+
+.card {
+  flex: 1;
+  max-width: 35%; 
+  transition: transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%; 
+  height: auto; 
+  object-fit: contain; 
+  border-bottom: 1px solid #ddd;
+}
+
+.details-container {
+  flex: 1;
+  display: none;
+  padding: 15px;
+  background-color: #373a39;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.details-container.show {
+  display: block;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+}
